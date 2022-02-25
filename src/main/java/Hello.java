@@ -1,17 +1,16 @@
 import antlr.HelloWalker;
 import antlr.gen.antlr.HelloLexer;
 import antlr.gen.antlr.HelloParser;
-import org.antlr.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import java.io.IOException;
 
-public class Sample {
+public class Hello {
     public static void main(String[] args) throws IOException {
-        final CodePointCharStream input = CharStreams.fromString("hello rrr");
 
+        final CodePointCharStream input = CharStreams.fromString("hello rrr");
 
         // create a lexer that feeds off of input CharStream
         HelloLexer lexer = new HelloLexer( input);
